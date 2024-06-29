@@ -1,57 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metrophobic:700|Metrophobic:400">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet" rel="stylesheet">
-</head>
-<body class="bg-background">
-    <div class="text-text">
-        <nav class="border border-text w-full">
-            <div class="container-fluid shadow-l flex justify-between items-center w-full">
-                <div class="flex m-6">
-                    <a href="#" class="text-2xl font-metro font-bold m-1">Muhammad Kurniawan Halim</a>
-                </div>
-                <div class="flex items-center m-6">
-                    <ul class="flex text-1xl">
-                        <li><a href="#home" class="text-text px-4 hover:bg-text hover:text-background hover:rounded-md py-2">Home</a></li>
-                        <li><a href="#about" class="text-text px-4 hover:bg-text hover:text-background hover:rounded-md py-2">About</a></li>
-                        <li><a href="#" class="text-text px-4 hover:bg-text hover:text-background hover:rounded-md py-2">Services</a></li>
-                        <li><a href="#" class="text-text px-4 hover:bg-text hover:text-background hover:rounded-md py-2">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <div id="home" class="m-10">
-            <div class="p-10 border border-text rounded-md shadow-lg text-metro flex">
-                <div class="pr-4">
-                    <h1 class="font-poppins text-3xl font-bold mb-4">
-                        Hi, Saya Muhammad Kurniawan Halim <br>
-                        Saya seorang Web Developer
-                    </h1>
-                    <p class="font-poppins text-xl">
-                        Saya adalah seorang pengembang web yang berbasis di Indonesia. Saya memiliki ketertarikan pada pengembangan web. Saya memiliki pengetahuan dalam pengembangan web dan saya ingin terus mempelajari teknologi dan kerangka kerja baru. Saya selalu mencari peluang baru untuk mengembangkan dan memperluas keterampilan saya.
-                    </p>
-                    <div class="mt-5">
-                        <a href="#about" class="font-metro text-background border-2 border-text bg-text p-2 rounded-md transition duration-300 hover:bg-background hover:text-text hover:font-bold">About Me!</a>
-                    </div>
-                </div>
-                <div class="pl-4 flex">
-                    <img class="rounded-full h-auto  object-cover" src="src/img/Foto_Muhammad Kurniawan Halim-removebg-preview.jpg" alt="profile">
-                </div>
-            </div>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Metrophobic:700|Metrophobic:400"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-background font-metro">
+    <div class="text-navy">
+      <nav class="border-b border-navy sticky top-0 bg-background z-50">
+        <div
+          class="container mx-auto flex justify-between items-center px-6 py-4"
+        >
+          <a href="#" class="text-2xl font-bold">Muhammad Kurniawan Halim</a>
+          <ul class="flex text-lg">
+            <li>
+              <a
+                href="#home"
+                class="px-4 py-2 hover:bg-navy hover:text-background rounded-md"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="px-4 py-2 hover:bg-navy hover:text-background rounded-md"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#project"
+                class="px-4 py-2 hover:bg-navy hover:text-background rounded-md"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="px-4 py-2 hover:bg-navy hover:text-background rounded-md"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-        
-        <div id="about" class="m-10">
-            <div class="p-10 border border-text rounded-md shadow-lg text-metro flex">
+      </nav>
 
+      <div id="home" class="container mx-auto my-10">
+        <div
+          class="p-10 border border-navy rounded-md shadow-lg flex items-center mx-10"
+        >
+          <div class="pr-4 w-3/4">
+            <h1 class="font-bold text-3xl mb-4">
+              Hi, Saya Muhammad Kurniawan Halim <br />
+              Saya seorang Web Developer
+            </h1>
+            <p class="text-xl">
+              Saya adalah seorang Web Developer yang berbasis di Indonesia. Saya
+              memiliki ketertarikan pada pengembangan web. Saya memiliki
+              pengetahuan dalam pengembangan web dan saya ingin terus
+              mempelajari teknologi dan kerangka kerja baru. Saya selalu mencari
+              peluang baru untuk mengembangkan dan memperluas keterampilan saya.
+            </p>
+            <div class="mt-5">
+              <a
+                href="#about"
+                class="bg-navy text-background px-4 py-2 border-2 border-navy rounded-md transition duration-300 hover:bg-background hover:text-navy"
+                >About Me!</a
+              >
             </div>
+          </div>
+          <div class="pl-4 w-1/4 flex justify-center">
+            <img
+              class="rounded-full h-auto w-32"
+              src="src/img/Foto_Muhammad Kurniawan Halim-removebg-preview.jpg"
+              alt="profile"
+            />
+          </div>
         </div>
+      </div>
 
+      <div id="about" class="container mx-auto my-10 flex items-center h-auto">
+        <div class="ml-10 p-10 border border-navy rounded-md shadow-lg w-4/5">
+          <h1 class="font-bold text-2xl mb-4">
+            Tentang Saya <br />
+            .....
+          </h1>
+          <p class="text-lg">
+            Hello, Saya Muhammad Kurniawan Halim. Saya adalah seorang mahasiswa
+            Universitas Palangka Raya dan mengambil jurusan Teknik Informatika.
+            Saya memiliki ketertarikan untuk menjadi seorang Web Developer dan
+            saya ingin terus belajar dan mengembangkan kemampuan saya dalam
+            pengembangan web. Saya memiliki keterampilan dalam beberapa bahasa
+            seperti Golang, JavaScript, dan PHP. Saya selalu mencari peluang
+            baru untuk mengembangkan dan memperluas keterampilan saya.
+          </p>
+        </div>
+        <div
+          class="ml-5 mr-10 p-10 border border-navy rounded-md shadow-lg w-1/5 h-auto"
+        >
+          <h1 class="font-bold text-2xl mb-4">
+            Hard Skills <br />
+            .....
+          </h1>
+          <ul class="list-none">
+            <li class="text-lg">Golang</li>
+            <li class="text-lg">PHP</li>
+            <li class="text-lg">JavaScript</li>
+            <li class="text-lg">HTML</li>
+            <li class="text-lg">CSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="project"
+        class="container mx-auto my-10 grid grid-cols-2 gap-7"
+      >
+        <div class="border border-navy rounded-md p-5 ml-10">
+          <h1 class="font-bold text-xl mb-2">
+            REST API - Inventory Management System
+          </h1>
+          <ul class="list-disc ml-8 text-lg">
+            <li>
+              Authentication and Authorization: Menerapkan registrasi pengguna,
+              login, dan kontrol akses menggunakan JWT
+            </li>
+            <li>
+              Stock Management: Fitur untuk menambah dan menghapus stok dengan
+              pencatatan terperinci semua transaksi.
+            </li>
+            <li>
+              API Integration: Menciptakan RESTful API untuk mengelola dan
+              mengakses data dari database PostgreSQL dengan penerapan Fitur.
+            </li>
+          </ul>
+        </div>
+        <div class="border border-navy rounded-md p-5 mr-10">
+          <h1 class="font-bold text-xl mb-2">REST API - Todo List</h1>
+          <ul class="list-disc ml-8 text-lg">
+            <li>Membuat REST API dengan bahasa pemrograman Golang</li>
+            <li>
+              Menerapkan model clean architecture MVC (Model View Controller)
+              serta Middleware.
+            </li>
+            <li>Menggunakan database PostgreSQL sebagai sistem basis data.</li>
+            <li>
+              Menerapkan implementasi otentikasi dan otorisasi dengan JWT (JSON
+              Web Token)
+            </li>
+          </ul>
+        </div>
+        <div class="border border-navy rounded-md p-5 ml-10">
+          <h1 class="font-bold text-xl mb-2">Cafe Ordering Website</h1>
+          <ul class="list-disc ml-8 text-lg">
+            <li>Membuat sebuah website pemesanan pada cafe.</li>
+            <li>
+              Mengelola life cycle pada website pemesanan cafe menggabungkan
+              frontend dan backend.
+            </li>
+            <li>Menggunakan PHP dan Mysql sebagai basis data.</li>
+          </ul>
+        </div>
+        <div class="border border-navy rounded-md p-5 mr-10">
+          <h1 class="font-bold text-xl mb-2">
+            Peanut Stain Online Clothing Store
+          </h1>
+          <ul class="list-disc ml-8 text-lg">
+            <li>
+              Berkontribusi membuat logic untuk pengolahan pengelolaan data
+            </li>
+            <li>Membantu pembuatan tampilan menu pada website.</li>
+            <li>
+              Berperan menghubungkan website dengan database menggunakan PHP dan
+              Mysql
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contact" class="container mx-auto my-10">
+        <div
+          class="p-10 border border-navy rounded-md shadow-lg flex items-center mx-10"
+        >
+          <div class="pr-4 w-3/4">
+            <h1 class="font-bold text-2xl mb-4">Contact <br /></h1>
+            <p>
+              <span>Email:</span>
+              <span>
+                <a class="hover:underline" target="_blank" href="mailto:halimml751@gmail.com">halimml751@gmail.com</a>
+              </span>
+            </p>
+            <p>
+              <span>Phone:</span>
+              <span>
+                <a class="hover:underline" target="_blank" href="tel:+6285156113494">+6285156113494</a>
+              </span>
+            </p>
+            <p>
+              <span>GitHub:</span>
+              <span>
+                <a class="hover:underline" target="_blank" href="https://github.com/Halim098">Halim098</a>
+              </span>
+            </p>
+            <p>
+              <span>LinkedIn:</span>
+              <span>
+                <a class="hover:underline" target="_blank" href="https://www.linkedin.com/in/muhammad-kurniawan-halim/"
+                  >Muhammad Kurniawan Halim</a
+                >
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
